@@ -18,6 +18,7 @@ package main
 import (
 	"crypto/x509"
 	"crypto/x509/pkix"
+	"encoding/pem"
 	"log"
 	"net"
 	"os"
@@ -26,12 +27,10 @@ import (
 	"strings"
 	"time"
 
-	"encoding/pem"
-
-	"github.com/codegangsta/cli"
 	"github.com/google/easypki/pkg/certificate"
 	"github.com/google/easypki/pkg/easypki"
 	"github.com/google/easypki/pkg/store"
+	"github.com/urfave/cli"
 )
 
 const (
